@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Quick Chat</title>
+</head> 
+<body>
+
+<h2>Quick Chat App</h2>
+
+<iframe src="/msgs/{{chat}}"></iframe>
+<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+<form action="/msg" target="dummyframe">
+  <label for="msg">Message:</label><br>
+  <input type="text" id="msg" name="msg"><br>
+  <input style = "display:none;" type="text" id="person" name="person" value="{{person}}"><br><br>
+  <input style = "display:none;" type="text" id="chat" name="chat" value="{{chat}}"><br><br>
+  <input type="submit" value="Send">
+</form> 
+
+</body>
+</html>
+
